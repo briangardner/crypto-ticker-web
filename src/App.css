@@ -26,3 +26,16 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.sell{
+  background-color: lightcoral;
+}
+
+.buy{
+  background-color: lightgreen;
+}
+
+.tickerRow{
+  background-color: transparent;
+  transition: background-color 2s ease-out;
+}

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import socketIOClient from "socket.io-client";
 import Ticker from './components/Ticker/Ticker';
+import GoogleAd from 'react-google-ad';
+import './App.css';
 
 class App extends Component {
   constructor() {
@@ -27,15 +29,13 @@ class App extends Component {
   }
   render() {
     
-    return <Ticker Symbols={this.state.coins} />
-    // <table>
-    //   {tableRows.map((row) => <tr>
-    //     <td>{row.product_id}</td>
-    //     <td>{row.price}</td>
-    //     <td>{row.open_24h}</td>
-    //   </tr>)}
-      
-    // </table>
+    return <div className="ui container">
+      <div className="ui one column grid stackable">
+        <div className="column">
+          <Ticker Symbols={this.state.coins} />
+        </div>
+      </div>
+    </div>;
   }
 
   
